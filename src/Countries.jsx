@@ -9,7 +9,7 @@ const Countries = () => {
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const response = await fetch('https://0b9f457a-c7f4-4a28-9f68-2fe10314cedd.mock.pstmn.io/crio');
+        const response = await fetch('https://countries-search-data-prod-812920491762.asia-south1.run.app/countries');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
